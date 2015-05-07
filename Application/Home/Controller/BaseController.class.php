@@ -4,14 +4,11 @@ namespace Home\Controller;
 use Think\Controller;
 
 class BaseController extends Controller {
-
-    protected $current_user;
     
     public function __construct() {
         parent::__construct();
 
         if($this->isLogin()) {
-            $this->current_user = $_SESSION [C('USER_NAME')];
 
             $user_id = $_SESSION [C('USER_AUTH_KEY')];
             $where = array(

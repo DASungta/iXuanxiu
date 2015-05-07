@@ -7,7 +7,6 @@ return array(
 	//'配置项'=>'配置值'
    
     'USER_AUTH_KEY' => 'user',
-    'USER_NAME' => 'username',
 
     //人人网配置
     'THINK_SDK_RENREN' => array(
